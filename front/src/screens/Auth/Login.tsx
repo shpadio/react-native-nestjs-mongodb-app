@@ -4,6 +4,7 @@ import { Button, Input } from "@ui-kitten/components";
 import {authStyles} from "./Register";
 
 const Login = ({}) => {
+    
   return (
     <View style={authStyles.authForm}>
       <Input placeholder="Username" />

@@ -12,12 +12,16 @@ export default function App() {
     <NativeRouter>
       <ApplicationProvider {...eva} theme={eva.light}>
         <Layout style={styles.container}>
-          <Link to="/login" underlayColor="#f0f4f7">
-            <Login />
-          </Link>
-          <Link to="/register" underlayColor="#f0f4f7">
-            <Register />
-          </Link>
+            <Link to="/login" underlayColor="#fff">
+              <Login />
+            </Link>
+            {/*<Link to="/register" underlayColor="#fff">*/}
+            {/*  <Register />*/}
+            {/*</Link>*/}
+          {/*<Route exact path="/" component={Login} />*/}
+          {/*<Route path="/register" component={Register} />*/}
+
+
         </Layout>
       </ApplicationProvider>
     </NativeRouter>

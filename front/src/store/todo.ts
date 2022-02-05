@@ -1,14 +1,14 @@
 import {makeAutoObservable} from 'mobx'
-import { TodoType } from '../helpers/types'
+import { Todo } from '../helpers/types'
 
-class Todo {
-    todos: TodoType[] = []
+class TodoStore {
+    todos: Todo[] = []
     
     constructor() {
         makeAutoObservable(this)
     }
 
-    addTodo(todo: TodoType){
+    addTodo(todo: Todo){
          this.todos.push(todo)
     }
 
@@ -22,4 +22,4 @@ class Todo {
     }
 }
 
-export default new Todo()
+export default new TodoStore()
